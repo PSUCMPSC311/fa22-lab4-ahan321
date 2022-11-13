@@ -882,7 +882,7 @@ int test_cache_insert_lookup() {
   printf("running %s: ", __func__);
 
   bool success = false;
-  cache_create(3);
+  printf("%d\n",cache_create(3));
 
   uint8_t in1[JBOD_BLOCK_SIZE] = { [0 ... JBOD_BLOCK_SIZE-1] = 0xaa };
   uint8_t in2[JBOD_BLOCK_SIZE] = { [0 ... JBOD_BLOCK_SIZE-1] = 0xbb };
