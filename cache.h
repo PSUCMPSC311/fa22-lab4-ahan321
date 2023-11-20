@@ -24,6 +24,8 @@ int cache_create(int num_entries);
  * cache_create function above. */
 int cache_destroy(void);
 
+int cache_lookup_no_buf(int disk_num, int block_num);
+
 /* Returns 1 on success and -1 on failure. Looks up the block located at
  * |disk_num| and |block_num| in cache and if found, copies the corresponding
  * block to |buf|, which must not be NULL. */
